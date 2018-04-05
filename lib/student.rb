@@ -57,7 +57,6 @@ class Student
     WHERE students.grade = 10
     LIMIT ?
     SQL
-    binding.pry
     DB[:conn].execute(sql, x)
   end
 
